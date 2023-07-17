@@ -6,7 +6,7 @@ import uuid
 class Course(models.Models):
     status=models.BooleanField(default=True)
     def __str__(self):
-       """String for representing the Model object."""
+       
        return self.title
     course_id = models.UUIDField()
     organization_id = models.ForeignKey(Organization, related_name='organization_id', tofield = 'organization_id')
